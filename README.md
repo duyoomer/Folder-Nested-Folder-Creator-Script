@@ -1,11 +1,11 @@
 Folder Creator Script
 
-This batch script creates folders based on the names in folder_names.txt and nested_folder.txt. Existing folders are skipped, and all operations are logged in folder_creation_log.txt.
+This script creates folders based on the names listed in folder_names.txt and nested_folder.txt. Existing folders are skipped, and all operations are logged in the folder_creation_log.txt file.
 
 Features
-	•	Allows the user to choose whether to create only main folders or nested folders as well.
-	•	Checks for existing folders and logs the process in folder_creation_log.txt.
-	•	Includes Unicode support (UTF-8).
+	•	Allows users to choose whether to create only main folders or nested folders as well.
+	•	Checks for existing folders and logs all operations in folder_creation_log.txt.
+	•	Unicode support (UTF-8).
 
 Requirements
 	•	Windows operating system.
@@ -13,11 +13,11 @@ Requirements
 
 Usage
 	1.	Prepare the Files:
-	•	folder_names.txt: Should contain the names of the main folders, one name per line.
-	•	nested_folder.txt: Should contain the names of the nested folders, one name per line.
+	•	folder_names.txt: Should contain the names of main folders. Arrange the names line by line.
+	•	nested_folder.txt: Should contain the names of nested folders. Arrange the names line by line.
 	2.	Run the Script:
-	•	Run the folder_creator.bat file.
-	•	From the menu, choose:
+	•	Execute the folder_creator.bat script.
+	•	From the menu:
 	•	1: Create only main folders.
 	•	2: Create main folders along with nested folders.
 	•	Make your selection and wait for the process to complete.
