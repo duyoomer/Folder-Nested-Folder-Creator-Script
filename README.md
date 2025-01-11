@@ -1,28 +1,39 @@
-Folder Creator Script
+# Folder Creation Script
 
-This script creates folders based on the names listed in folder_names.txt and nested_folder.txt. Existing folders are skipped, and all operations are logged in the folder_creation_log.txt file.
+This script creates folders based on the names specified in two text files: `folder_names.txt` and `nested_folder.txt`. It supports two modes:
 
-Features
-	•	Allows users to choose whether to create only main folders or nested folders as well.
-	•	Checks for existing folders and logs all operations in folder_creation_log.txt.
-	•	Unicode support (UTF-8).
+- **Creating only top-level folders** listed in `folder_names.txt`.
+- **Creating nested folders** where subfolders from `nested_folder.txt` are created inside the top-level folders.
 
-Requirements
-	•	Windows operating system.
-	•	Command Prompt or PowerShell to run the script.
+Existing folders will be skipped, and all actions will be logged in a `folder_creation_log.txt` file.
 
-Usage
-	1.	Prepare the Files:
-	•	folder_names.txt: Should contain the names of main folders. Arrange the names line by line.
-	•	nested_folder.txt: Should contain the names of nested folders. Arrange the names line by line.
-	2.	Run the Script:
-	•	Execute the folder_creator.bat script.
-	•	From the menu:
-	•	1: Create only main folders.
-	•	2: Create main folders along with nested folders.
-	•	Make your selection and wait for the process to complete.
-	3.	Check the Results:
-	•	All operations are logged in the folder_creation_log.txt file.
+## Features
+- Choose between creating only top-level folders or creating nested folders.
+- Log all operations (folder creation and skipping) into a log file.
+- Handle special characters and UTF-8 encoding properly.
+
+## Requirements
+- Windows environment (Batch scripting).
+
+## Usage
+
+1. Place this script in the desired directory.
+2. Create two text files:
+   - `folder_names.txt` – List of top-level folder names to create.
+   - `nested_folder.txt` – List of subfolders to create inside each top-level folder (if selected).
+3. Run the script by double-clicking it or executing it from the command line.
+
+## How to Run
+- When you run the script, you will be prompted to choose one of the following options:
+  - **1. Create only top-level folders** (from `folder_names.txt`).
+  - **2. Create nested folders** (subfolders inside each top-level folder as defined in `nested_folder.txt`).
+
+The script will automatically:
+- Skip existing folders.
+- Log the process into `folder_creation_log.txt`.
+
+
+--------------------------------------------------
 
 
 # Folder Creator Script
